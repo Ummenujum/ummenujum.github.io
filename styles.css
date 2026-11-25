@@ -84,3 +84,9 @@ footer { border-top: 1px solid var(--line); }
 .intro-highlight {
   font-weight: 500;
 }
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
