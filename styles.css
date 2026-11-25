@@ -90,3 +90,21 @@ footer { border-top: 1px solid var(--line); }
   font-weight: 400;
   letter-spacing: -0.035em;
 }
+.masthead .brand {
+  font-family: "Allura", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .masthead .brand {
+    animation: signature-reveal 1.2s ease-out both;
+  }
+
+  @keyframes signature-reveal {
+    from { clip-path: inset(-20% 100% -25% -10%); }
+    to   { clip-path: inset(-20% -10% -25% -10%); }
+  }
+}
