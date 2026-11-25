@@ -61,3 +61,28 @@ footer { border-top: 1px solid var(--line); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Homepage contour accent. Remove this block to restore the plain sage background. */
+@media (min-width: 72rem) {
+  .hero {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 0 auto;
+    width: min(34%, 42rem);
+    pointer-events: none;
+    background: repeating-radial-gradient(
+      ellipse 78% 62% at 108% 44%,
+      transparent 0 22px,
+      #647f68 23px 24px,
+      transparent 25px 28px
+    );
+    opacity: .24;
+    mask-image: linear-gradient(to left, #000 8%, transparent 94%);
+  }
+}
