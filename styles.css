@@ -80,3 +80,7 @@ footer { border-top: 1px solid var(--line); }
 #about .lede {
   max-width: none;
 }
+
+.intro-highlight {
+  font-weight: 500;
+}
