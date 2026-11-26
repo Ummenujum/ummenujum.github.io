@@ -109,3 +109,13 @@ footer { border-top: 1px solid var(--line); }
     to   { clip-path: inset(-20% -10% -25% -10%); }
   }
 }
+
+.masthead .brand span {
+  display: inline-block;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .masthead .brand:hover span {
+    animation: signature-reveal 1.2s ease-out;
+  }
+}
